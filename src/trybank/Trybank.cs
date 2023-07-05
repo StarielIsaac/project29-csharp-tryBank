@@ -31,7 +31,10 @@ public class Trybank
                 }
             }
             
-
+            Bank[registeredAccounts, 0] = number;
+            Bank[registeredAccounts, 1] = agency;
+            Bank[registeredAccounts, 2] = pass;
+            Bank[registeredAccounts, 3] = 0;
 
             registeredAccounts += 1;
         } 
