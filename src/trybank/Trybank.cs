@@ -1,14 +1,13 @@
 ﻿namespace trybank;
 
 public class Trybank
-{
-    public bool Logged;
-    public int loggedUser;
-    
     //0 -> Número da conta
     //1 -> Agência
     //2 -> Senha
     //3 -> Saldo
+{
+    public bool Logged;
+    public int loggedUser;
     public int[,] Bank;
     public int registeredAccounts;
     private int maxAccounts = 50;
@@ -23,7 +22,14 @@ public class Trybank
     // 1. Construa a funcionalidade de cadastrar novas contas
     public void RegisterAccount(int number, int agency, int pass)
     {
-        throw new NotImplementedException();
+        try 
+        {
+            
+        } 
+        catch (ArgumentException ex) 
+        {
+            Console.WriteLine(ex.Message);
+        }
     }
 
     // 2. Construa a funcionalidade de fazer Login
