@@ -23,12 +23,16 @@ public class Trybank
     public void RegisterAccount(int number, int agency, int pass)
     {
 
-            for(int count = 0; count < Bank.Length; count += 1)
+            for(int count = 0; count < maxAccounts; count += 1)
             {
-                if(number == Bank[count, 0] && agency == Bank[count, 1]) 
-                {
+                if(number == Bank[count, 0] && agency == Bank[count, 1]) {
                     throw new ArgumentException("A conta já está sendo usada!");
                 }
+            }
+
+            
+            if(registeredAccounts >= maxAccounts) {
+                throw new ArgumentException("Já atingimos o máximo de contas");
             }
             
             Bank[registeredAccounts, 0] = number;
@@ -37,7 +41,7 @@ public class Trybank
             Bank[registeredAccounts, 3] = 0;
 
             registeredAccounts += 1;
-        } 
+    } 
     
 
     // 2. Construa a funcionalidade de fazer Login
