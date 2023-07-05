@@ -24,7 +24,14 @@ public class Trybank
     {
         try 
         {
+            for(int count = 0; count < Bank.Length; count += 1)
+            {
+               
+            }
             
+
+
+            registeredAccounts += 1;
         } 
         catch (ArgumentException ex) 
         {
