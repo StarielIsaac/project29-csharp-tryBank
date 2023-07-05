@@ -22,8 +22,7 @@ public class Trybank
     // 1. Construa a funcionalidade de cadastrar novas contas
     public void RegisterAccount(int number, int agency, int pass)
     {
-        try 
-        {
+
             for(int count = 0; count < Bank.Length; count += 1)
             {
                 if(number == Bank[count, 0] && agency == Bank[count, 1]) {
@@ -38,11 +37,7 @@ public class Trybank
 
             registeredAccounts += 1;
         } 
-        catch (ArgumentException ex) 
-        {
-            Console.WriteLine(ex.Message);
-        }
-    }
+    
 
     // 2. Construa a funcionalidade de fazer Login
     public void Login(int number, int agency, int pass)
