@@ -26,7 +26,7 @@ public class Trybank
         {
             for(int count = 0; count < Bank.Length; count += 1)
             {
-                if(number == Bank[count, 0] || agency == Bank[count, 1]) {
+                if(number == Bank[count, 0] && agency == Bank[count, 1]) {
                     throw new ArgumentException("A conta já está sendo usada!");
                 }
             }
