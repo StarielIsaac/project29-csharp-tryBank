@@ -54,7 +54,18 @@ public class Trybank
 
         for(int count = 0; count < maxAccounts; count += 1)
         {
-            
+         if(number == Bank[count, 0] && agency == Bank[count, 1])
+         {
+            if(pass == Bank[count, 2])
+            {
+
+            }
+            else 
+            {
+
+            }
+         }   
+
         }
     }
 
