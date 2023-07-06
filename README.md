@@ -1,4 +1,4 @@
-# csharp-tryBank
+# Bem vindo ao projeto csharp-tryBank 🏦💸
 
 Já pensou em criar um sistema bancário completo? Com o projeto csharp-tryBank, você terá a oportunidade de desenvolver uma aplicação para controlar contas bancárias e realizar operações básicas como checar saldo, depositar, sacar e transferir dinheiro. Além disso, você poderá cadastrar novas contas e gerenciar o login e logout dos usuários no sistema.
 
@@ -15,29 +15,29 @@ Neste projeto, você terá a oportunidade de demonstrar suas habilidades em:
 
 ### 1. Cadastrar novas contas
 
-- Crie a lógica para permitir o cadastro de novas contas.
+- Lógica para permitir o cadastro de novas contas.
 ### 2. Fazer Login
 
-- Implemente a funcionalidade de login.
+- Funcionalidade de login.
 
 ### 3. Fazer Logout
 
-- Desenvolva a lógica para permitir o logout do usuário.
+- Lógica para permitir o logout do usuário.
 
 ### 4. Checar o saldo
 
-- Construa a funcionalidade para verificar o saldo na conta da pessoa usuária logada.
+- Funcionalidade para verificar o saldo na conta da pessoa usuária logada.
 
 ### 5. Depositar dinheiro
 
-- Implemente a funcionalidade para permitir o depósito de um valor na conta da pessoa usuária logada.
+- Funcionalidade para permitir o depósito de um valor na conta da pessoa usuária logada.
 
 ### 6. Sacar dinheiro
 
-- Desenvolva a funcionalidade para permitir o saque de um valor da conta da pessoa usuária logada.
+- Funcionalidade para permitir o saque de um valor da conta da pessoa usuária logada.
 ### 7. Transferir dinheiro entre contas
 
-- Crie a lógica para permitir a transferência de saldo entre a conta da pessoa usuária logada e uma conta existente.
+- Lógica para permitir a transferência de saldo entre a conta da pessoa usuária logada e uma conta existente.
 
 ## Executando os testes
 
@@ -56,6 +56,4 @@ dotnet test
 5. Envie suas alterações para o repositório remoto: `git push origin minha-branch`.
 6. Abra um Pull Request neste repositório, descrevendo suas alterações.
 
-Sinta-se à vontade para contribuir com correções, melhorias e novas funcionalidades. Seu feedback e contribuições são muito bem-vindos!
-
-Divirta-se desenvolvendo o csharp-tryBank e mostre suas habilidades em programação! 🚀
+Sinta-se à vontade para contribuir com correções, melhorias e novas funcionalidades. Seu feedback e contribuições são muito bem-vindos! 🚀
