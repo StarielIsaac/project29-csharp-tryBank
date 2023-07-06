@@ -60,13 +60,16 @@ public class Trybank
             {
                 Logged = true;
                 loggedUser+= 1;
+                break;
             }
             else 
             {
                 throw new ArgumentException("Senha incorreta");
             }
-         }   
-
+         }
+         if(loggedUser <= 0) 
+            throw new ArgumentException("Agência + Conta não encontrada");{
+         }
         }
     }
 
