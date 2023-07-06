@@ -58,11 +58,12 @@ public class Trybank
          {
             if(pass == Bank[count, 2])
             {
-
+                Logged = true;
+                loggedUser+= 1;
             }
             else 
             {
-
+                throw new ArgumentException("Senha incorreta");
             }
          }   
 
