@@ -54,24 +54,21 @@ public class Trybank
 
         for(int count = 0; count < maxAccounts; count += 1)
         {
-         if(number == Bank[count, 0] && agency == Bank[count, 1])
-         {
-            if(pass == Bank[count, 2])
+            if(number == Bank[count, 0] && agency == Bank[count, 1])
             {
-                Logged = true;
-                loggedUser = count;
-                break;
-            }
-            else 
-            {
+                if(pass == Bank[count, 2])
+                {
+                    Logged = true;
+                    loggedUser = count;
+                    return;
+                }
+
                 throw new ArgumentException("Senha incorreta");
             }
-         }
         }
 
-        if(loggedUser <= 0) 
-            throw new ArgumentException("Agência + Conta não encontrada");{
-        }
+        throw new ArgumentException("Agência + Conta não encontrada");
+        
     }   
 
     // 3. Construa a funcionalidade de fazer Logout
