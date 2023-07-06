@@ -59,7 +59,7 @@ public class Trybank
             if(pass == Bank[count, 2])
             {
                 Logged = true;
-                loggedUser+= 1;
+                loggedUser = count;
                 break;
             }
             else 
@@ -67,11 +67,12 @@ public class Trybank
                 throw new ArgumentException("Senha incorreta");
             }
          }
-         if(loggedUser <= 0) 
-            throw new ArgumentException("Agência + Conta não encontrada");{
-         }
         }
-    }
+
+        if(loggedUser <= 0) 
+            throw new ArgumentException("Agência + Conta não encontrada");{
+        }
+    }   
 
     // 3. Construa a funcionalidade de fazer Logout
     public void Logout()
