@@ -120,6 +120,7 @@ public class Trybank
             throw new InvalidOperationException("Saldo insuficiente");
         }
 
+        Bank[loggedUser, 3] -= value;
     }
 
     // 7. Construa a funcionalidade de transferir dinheiro entre contas
