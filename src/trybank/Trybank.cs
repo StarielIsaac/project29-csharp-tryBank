@@ -90,6 +90,9 @@ public class Trybank
         {
             throw new AccessViolationException("Usuário não está logado");
         }
+
+
+        return Bank[loggedUser, 3];
     }
 
     // 5. Construa a funcionalidade de depositar dinheiro
