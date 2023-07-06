@@ -51,6 +51,11 @@ public class Trybank
         {
             throw new AccessViolationException("Usuário já está logado");
         }
+
+        for(int count = 0; count < maxAccounts; count += 1)
+        {
+            
+        }
     }
 
     // 3. Construa a funcionalidade de fazer Logout
